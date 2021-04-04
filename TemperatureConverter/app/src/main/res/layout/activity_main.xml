@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="true"
+    android:orientation="vertical"
+    android:translationY="5dp">
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONSERSION:"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="F to C"
+                android:translationX="70dp" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="C to F"
+                android:translationX="185sp"
+                android:translationY="-45sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:translationY="10dp">
+
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/gray"
+            android:inputType="numberDecimal"
+            android:hint="Nhap"></EditText>
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="20sp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:text="="
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray"></TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Convert"
+        android:textSize="20sp"
+        android:translationY="30sp"></Button>
+    <ListView
+        android:id="@+id/lsv"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/boarder"
+        android:translationX="30dp"
+        android:translationY="50dp">
+    </ListView>
+
+</LinearLayout>
